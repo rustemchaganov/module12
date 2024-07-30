@@ -4,6 +4,7 @@ include "persons.php";
 const MALE = 'мужской';
 const FEMALE = 'женский';
 const UNDEFINED = 'неопределенный';
+
 // Разбиение и объединение ФИО
 
 function getFullNameFromParts(string $surname, string $name, string $patronymic): string
@@ -23,6 +24,7 @@ function getPartsFromFullName(string $string, string $separator = ' '): array
 }
 
 //Сокращение ФИО
+
 function getShortName(string $fullName): string
 {
     $nameParts = getPartsFromFullName($fullName);
